@@ -6,8 +6,8 @@
 class Identifier : public IIdentifier
 {
 public:
-    Identifier() = default;
-	std::string GenerateNextIdentifier(const std::string &identifier) override;
+    Identifier(){};
+	std::string GenerateNextIdentifier(const std::string &identifier);
 private:
     char nextChar(bool& overflow, char c);
     char nextLetter(bool& overflow, char c);

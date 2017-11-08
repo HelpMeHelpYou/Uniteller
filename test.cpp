@@ -5,7 +5,7 @@
 
 int main()
 {
-    std::unique_ptr<IIdentifier> indentifier(new Identifier);
+    std::auto_ptr<IIdentifier> indentifier(new Identifier);
 
     assert(indentifier->GenerateNextIdentifier("A1")=="A2");
     assert(indentifier->GenerateNextIdentifier("A9")=="B1");

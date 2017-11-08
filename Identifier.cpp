@@ -1,11 +1,13 @@
 #include "Identifier.hpp"
 
+#include <cstddef>
+
 std::string Identifier::GenerateNextIdentifier(const std::string &identifier)
 {
     bool overflow;
     std::string identifierCopy = identifier;
 
-    for ( ssize_t i = identifierCopy.length()-1; ; i--)
+    for ( int i = identifierCopy.length()-1; ; i--)
     {
         if (i < 0)
         {
