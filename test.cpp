@@ -15,4 +15,5 @@ int main()
     assert(indentifier->GenerateNextIdentifier("Z9-Z9")=="A1-A1-A1");
 
     return 0;
+
 }
